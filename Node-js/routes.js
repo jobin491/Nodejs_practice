@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs');  
 
 const requestHandler = (req,res)=>{
     const url = req.url;
@@ -35,3 +35,13 @@ const requestHandler = (req,res)=>{
 }
 
 module.exports = requestHandler
+ /**
+  module.exports ={
+    handler:requestHadler,
+    someText:'some texxt'
+  };
+
+
+  module.exports.handler = requestHandler;
+  module.exports.someText = 'some text';
+  */
