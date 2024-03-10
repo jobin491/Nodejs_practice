@@ -17,7 +17,7 @@ exports.getProduct = (req, res, next) => {
   Product.findAll({where: {id: prodId}})
     .then(products=>{
       res.render('shop/product-detail',{
-        product: products[0],
+        product: products[0], 
         pageTitle: products[0].title,
         path:'/products'
       });
